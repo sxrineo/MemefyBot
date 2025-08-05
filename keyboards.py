@@ -12,3 +12,16 @@ meme_templates_kb = InlineKeyboardMarkup(
         [InlineKeyboardButton(text="Стандарт X", callback_data="Standart_X_template")]
     ]
 )
+
+required_channels_kb = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton(text="Мастерская разработчика", url="https://t.me/code_laba")]
+    ]
+)
+
+admin_kb = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Кол-во пользователей"), KeyboardButton(text="Топ X")]
+    ],
+    resize_keyboard=True
+)

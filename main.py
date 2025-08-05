@@ -1,10 +1,7 @@
 import asyncio
-from aiogram import Bot, Dispatcher
-from private_config import BOT_TOKEN
+from private_config import dp, bot
 from handlers import router
 
-bot = Bot(token=BOT_TOKEN)
-dp = Dispatcher()
 dp.include_router(router=router)
 
 
